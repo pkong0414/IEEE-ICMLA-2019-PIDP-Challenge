@@ -1,4 +1,4 @@
-# Protein Distance Prediction Challenge
+# Protein Inter-Residue Distance Prediction Challenge - ICMLA 2019
 <img src="pdp-problem.png" align="middle" height="450"/>
 
 # Background & Dataset Preparation
