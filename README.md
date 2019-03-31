@@ -14,6 +14,9 @@ A Python Notebook containing code to train, validate, and test is available at
 https://github.com/badriadhikari/Protein-Distance-Prediction-Challenge   
 
 ##  Overview  
+Predicting three-dimensional structures of proteins is a notoriously challenging interdisciplinary problem [1,2]. Many biologists, biochemists, bioinformaticians, biomedical researchers, and computer scientists have been attacking the problem for 50+ years . Now, with the help of deep learning methods and high throughput protein sequencing technologies, it appears that we are close to cracking it. The overall goal in the field of protein structure prediction is to predict full three-dimensional structure given an amino acid sequence. Google DeepMind recently participated in the CASP13 protein structure prediction challenge as the AlphaFold group  and contributed some novel ideas to the field. It is clear that there are many unexplored opportunities in the field using the data that is currently available.  
+
+In this challenge, we focus on predicting the inter-residue distances (in Angstroms) between the residues (carbon-beta atoms) in a protein. For a protein sequence, we first predict useful features such as secondary structures and coevolutionary signals, which serve as the input to a neural network. The network is, in turn, should aim to predict the physical distances between all pairs of amino acids.  
 <img src="pdp-problem.png" align="middle" height="450"/>
 
 # Background & Dataset Preparation
