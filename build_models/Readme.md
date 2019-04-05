@@ -3,7 +3,7 @@ This folder contains scripts and dataset to build full three-dimensional models 
 
 | File | Description|
 | :---: | :---: |
-| * predict-distances.py * | * Script to predict and write distance files (in RR format) using a trained deep learning model *  |
+| *predict-distances.py* | *Script to predict and write distance files (in RR format) using a trained deep learning model*  |
 | build-3d-models.sh | Script to build full atom 3D models with distance files (.rr format) and predicted secondary structures |
 | evaluate-3d-models.sh | For each protein in the test dataset, this script compares all the predicted 20 models with the true structures |
 | my-rr-predictions.tar.gz | Predictions obtained by the 'predict-distances.py'. This must be replaced by your predictions. |
