@@ -1,3 +1,2 @@
-This folder will contain scripts to demonstrate how 3D models can be build from the predicted distances..
+This folder contains scripts and dataset to build full three-dimensional models for the 150 proteins in the test dataset. Assuming that your distance prediction training is complete and that you have a trained model, this README file provides the steps to build models using [DISTFOLD](https://github.com/badriadhikari/DISTFOLD) and evaluate them using [TMscore](https://zhanglab.ccmb.med.umich.edu/TM-score/).
 
-ToDo:
