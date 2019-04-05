@@ -1,7 +1,7 @@
 # IEEE ICMLA 2019 Challenge - Protein Inter-Residue Distance Prediction
 
 ## Organizers  
-[Badri Adhikari](https://badriadhikari.github.io/) and [Sharlee Climer](http://www.cs.umsl.edu/~climer/)
+[Badri Adhikari](https://badriadhikari.github.io/) and [Sharlee Climer](http://www.cs.umsl.edu/~climer/)  
 University of Missouri-St. Louis
 
 ## Contact  
