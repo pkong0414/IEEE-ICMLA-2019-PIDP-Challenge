@@ -7,7 +7,7 @@ adhikarib@umsl.edu
 Paper Submission Deadline: September 14, 2019  
 Notification of acceptance: : October 7, 2018  
 Camera-ready papers & Pre-registration: October 17, 2018  
-The ICMLA Conference: December 16-19, 2019  
+The IEEE ICMLA Conference: December 16-19, 2019  
 ##  Datasets & Code at GitHub  
 The dataset for training, validation, and testing are available at https://console.cloud.google.com/storage/browser/protein-distance  
 A Python Notebook containing code to train, validate, and test is available at 
@@ -70,7 +70,7 @@ A short paper (4 pages) describing the proposed algorithms and results on the pr
 
 ## Publication
 
-Accepted papers will be scheduled for presentations at the conference and published in the ICMLA 2019 conference proceedings.
+Accepted papers will be scheduled for presentations at the conference and published in the IEEE ICMLA 2019 conference proceedings.
 
 ## Where to Start?
 
@@ -89,7 +89,3 @@ You (probably) won’t be able to load the full dataset in Google Colaboratory. 
 7. 	Kaján L, Hopf T a, Kalaš M, Marks DS, Rost B. FreeContact: fast and free software for protein contact prediction from residue co-evolution. BMC Bioinformatics. 2014;15: 85. doi:10.1186/1471-2105-15-85
 8. 	Adhikari B, Bhattacharya D, Cao R, Cheng J. CONFOLD: Residue-residue contact-guided ab initio protein folding. Proteins. 2015;83: 1436–49. doi:10.1002/prot.24829
 9. 	Adhikari B, Nowotny J, Bhattacharya D, Hou J, Cheng J. ConEVA: a toolbox for comprehensive assessment of protein contacts. BMC Bioinformatics. 2016;17: 517. doi:10.1186/s12859-016-1404-z
-
-
-
-
