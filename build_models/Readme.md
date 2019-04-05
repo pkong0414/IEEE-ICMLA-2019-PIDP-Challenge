@@ -22,6 +22,9 @@ The script "build-3d-models.sh" can be used to build 3D models using the top L l
 ```
 ### Step 5: Evaluate predicted models
 The script 'evaluate-3d-models.sh' uses TMscore to automatically score the predicted models against the true structures.
+```bash
+./evaluate-3d-models.sh
+```
 
 ### [Optional] Step 6: Visualize predicted models
 Predicted models and true structures may be visualized using [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/).
