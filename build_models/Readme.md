@@ -3,7 +3,12 @@ This folder contains scripts and dataset to build full three-dimensional models 
 
 | File | Description|
 | :---: | :---: |
-| Seconds | 283 |
+| predict-distances.py | Script to predict and write distance files (in RR format) using a trained deep learning model. |
+| build-3d-models.sh | - |
+| evaluate-3d-models.sh | - |
+| my-rr-predictions.tar.gz | -. This must be replaced by your predictions. |
+| pdb.tar.gz | - |
+| ss.tar.gz | - |
 
 ### Step 1: Predict top L long-range distances
 The script "predict-distances.py" can be used to write distance matrix (map) files and top L shortest long-range distances to a file in the standard [CASP RR file format](http://predictioncenter.org/casp8/index.cgi?page=format#RR). The first step is to update the "predict-distances.py" with the correct path to your model.
