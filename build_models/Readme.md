@@ -1,4 +1,4 @@
-## Scripts and dataset to build/evaluate 3D models  
+# Scripts and dataset to build/evaluate 3D models  
 This folder contains scripts and dataset to build full three-dimensional models for the 150 proteins in the test dataset. Assuming that your distance prediction training is complete and that you have a trained model, this README file provides the steps to build models using [DISTFOLD](https://github.com/badriadhikari/DISTFOLD) and evaluate them using [TMscore](https://zhanglab.ccmb.med.umich.edu/TM-score/).
 
 | File | Description|
@@ -10,6 +10,7 @@ This folder contains scripts and dataset to build full three-dimensional models 
 | pdb.tar.gz | True/Correct 3D structures for the 150 proteins in the test dataset |
 | ss.tar.gz | Secondary structures predicted for the proteins in the test dataset using [SSpro](http://scratch.proteomics.ics.uci.edu/) |
 
+# Steps  
 ### Step 1: Predict top L long-range distances
 The script "predict-distances.py" can be used to write distance matrix (map) files and top L shortest long-range distances to a file in the standard [CASP RR file format](http://predictioncenter.org/casp8/index.cgi?page=format#RR). The first step is to update the "predict-distances.py" with the correct path to your model.
 ```bash
