@@ -54,11 +54,15 @@ The test dataset consists of 150 proteins. These are available as two numpy file
 
 ### Codes  
 
-The python notebook file PIDP_v1_0.ipynb has the code to: 1) load the dataset (sample dataset by default), 2) build a small ConvNet (an example model), 3) train and validate the model, and 4) evaluate the model on the Test dataset. See the folder “building_models” for the code examples to building three dimensional models using CONFOLD [8] and for evaluating using ConEva [9]. 
+The python notebook file PIDP_v1_0.ipynb has the code to: 1) load the dataset (sample dataset by default), 2) build a small ConvNet (an example model), 3) train and validate the model, and 4) evaluate the model on the Test dataset. 
+
+### Building 3D Models using the predicted distances
+
+The folder “how_to_build_models” in the this GitHub repository contains the code examples to build three dimensional models and to evaluate the models against the true/correct structures.
 
 ## How Did We Prepare the Dataset?
 
-Please refer to the GitHub repository for the details about this dataset preparation.
+Please refer to the GitHub repository for the details about dataset preparation.
 
 ## Submission
 
