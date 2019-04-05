@@ -1,17 +1,20 @@
 # IEEE ICMLA 2019 Challenge - Protein Inter-Residue Distance Prediction
+
 ## Organizers  
 Badri Adhikari and Sharlee Climer, University of Missouri-St. Louis
+
 ## Contact  
 adhikarib@umsl.edu
+
 ## Important Dates  
 Paper Submission Deadline: September 14, 2019  
 Notification of acceptance: : October 7, 2018  
 Camera-ready papers & Pre-registration: October 17, 2018  
 The IEEE ICMLA Conference: December 16-19, 2019  
+
 ##  Datasets & Code at GitHub  
 The dataset for training, validation, and testing are available at https://console.cloud.google.com/storage/browser/protein-distance  
-A Python Notebook containing code to train, validate, and test is available at 
-https://github.com/badriadhikari/Protein-Distance-Prediction-Challenge   
+A Python Notebook containing code to train, validate, and test is available at this repository.
 
 ##  Overview  
 Predicting three-dimensional structures of proteins is a notoriously challenging interdisciplinary problem [1,2]. Many biologists, biochemists, bioinformaticians, biomedical researchers, and computer scientists have been attacking the problem for 50+ years . Now, with the help of deep learning methods and high throughput protein sequencing technologies, it appears that we are close to cracking it. The overall goal in the field of protein structure prediction is to predict full three-dimensional structure given an amino acid sequence. Google DeepMind recently participated in the CASP13 protein structure prediction challenge as the AlphaFold group  and contributed some novel ideas to the field. It is clear that there are many unexplored opportunities in the field using the data that is currently available.  
@@ -24,11 +27,9 @@ Figure1. A correct distance matrix is obtained from an experimentally determined
 From the perspective of input and output data format, the protein distance prediction problem is similar to depth prediction [3] in computer vision, i.e. predicting 3D depth from 2D images. In the depth prediction problem, the input is an image of dimensions H x W x C, where H is height, W is width, and C is number of input channels, and the output is a two-dimensional matrix of size H x W whose values represent the depth intensities. Similarly, in the protein distance prediction problem, the input is protein features of dimension L x L x N, where L is the length of the protein sequence, N is the number of input channels, and the output is a distance matrix of size L x L. Depth prediction usually involves three channels (red, green, and blue or hue, saturation, and value) while in the latter we have much higher number of features such as 56 [4] or 441 [5]. The dataset in this challenge, however, has only 13 input channels. These input channels represent features such as secondary structures, solvent accessibility, and coevolutionary signals predicted using tools such as CCMpred [6] and FreeContact [7].
 
 ## Challenge  
-
 Each protein input features are an input volume of size 256 x 256 x 13 and the output labels are a 256 x 256 matrix of real numbers that represent the physical distances (from 3 Angstroms to 100+ Angstroms). The challenge here is to learn from the 13 input channels to accurately predict the output labels. It is a regression problem where we predict real values. However, it can be transformed into a multi-class classification problem by creating bins of distance ranges, i.e. predict whether each distance maps to a range of 0 to 3, or 3 to 6, or 6+, etc. It is expected that you train and validate your method on the Training Dataset and finally test it on the Test Dataset.
 
 ## Performance Evaluation  
-
 The goal of our evaluation is to assess the usefulness of predicted distances towards using them to build full three-dimensional models. Long-range distances are the most difficult to accurately determine and our evaluations focus on ‘long-range’ distances, as shown in Figure 2. Long-range distances in a distance matrix are the distances between pairs of amino acids that are more than 23 residues apart in the corresponding protein sequence. Towards that goal, we will evaluate distance map predictions in two ways: 
 
 1. MAE of the top L long-range smallest predicted distances: Of all the predicted long-range distances, distances are sorted in ascending order and only the top L distances are considered for evaluation. L stands for the length of the protein being evaluated. Then the mean absolute error (MAE) between these predicted distances and true distances is calculated.  
