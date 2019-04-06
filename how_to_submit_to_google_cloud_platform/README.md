@@ -1,6 +1,6 @@
 ### Step 0: Setup your [Google Cloud Storage](https://cloud.google.com/storage/)
 
-### Step 1: Download and files in this folder
+### Step 1: Download files in this folder
 
 ### Step 2: Initialize
 ```bash
