@@ -1,3 +1,5 @@
+### Step 0: Setup your google cloud storage
+
 ### Step 1: Download and files in this folder
 
 ### Step 2: Initialize
