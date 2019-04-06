@@ -5,7 +5,7 @@
 gcloud init
 ```
 
-# Update GCP storate in 'submit-gcloud-job.sh' with your google storate location
+### Update GCP storate in 'submit-gcloud-job.sh' with your google storate location
 ```bash
    --job-dir=gs://YOUR-GCP-STORAGE 
 ```
