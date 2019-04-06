@@ -1,4 +1,4 @@
-### Step 1: Download and unzip GCP-PIDP.zip
+### Step 1: Download and files in this folder
 
 ### Step 2: Initialize
 ```bash
