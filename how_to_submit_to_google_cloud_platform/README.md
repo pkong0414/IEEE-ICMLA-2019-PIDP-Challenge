@@ -1,3 +1,5 @@
+### Step 1: Download and unzip GCP-PIDP.zip
+
 ### Step 1: Initialize
 ```bash
 gcloud init
