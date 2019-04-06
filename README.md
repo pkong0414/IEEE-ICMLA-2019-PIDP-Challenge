@@ -13,7 +13,7 @@ Notification of acceptance: : October 7, 2018
 Camera-ready papers & Pre-registration: October 17, 2018  
 The IEEE ICMLA Conference: December 16-19, 2019  
 
-##  Datasets & Code at GitHub  
+##  Datasets & Code
 * The dataset for training, validation, and testing are available at https://console.cloud.google.com/storage/browser/protein-distance  
 * A Python Notebook containing code to train, validate, and test is available at this repository. GitHub sometimes fails to open this notebook (probably because of its large size). [Here](https://colab.research.google.com/drive/1w4_ETou_y5455VQD2bbF_4R6bI2GQqWo) is the Google Colaboratory link to the notebook.
 
