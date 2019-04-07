@@ -330,7 +330,7 @@ def main(job_dir):
     x = dirlocal + 'testset-input-features.npy'
     if not os.path.isfile(x):
         x = BytesIO(file_io.read_file_to_string(dirgcp + 'testset-input-features.npy', binary_mode=True))
-    (pdb_list, length_dict, input_features)  = np.load(x)
+    (pdb_list, length_dict, sequence_dict, input_features)  = np.load(x)
     x = dirlocal + 'testset-distance-maps-cb.npy'
     if not os.path.isfile(x):
         x = BytesIO(file_io.read_file_to_string(dirgcp + 'testset-distance-maps-cb.npy', binary_mode=True))
