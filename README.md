@@ -35,7 +35,7 @@ The goal of our evaluation is to assess the usefulness of predicted distances to
 
 1. MAE of the top L long-range smallest predicted distances: Of all the predicted long-range distances, distances are sorted in ascending order and only the top L distances are considered for evaluation. L stands for the length of the protein being evaluated. Then the mean absolute error (MAE) between these predicted distances and true distances is calculated.  
 
-2. Precision of all long-range contacts: From the true distance matrix and the predicted distance matrix, all long-range distances less than 8 Angstroms are set to 1 and all others to zero, i.e. we convert the distance matrix to long-range contact matrix. Then, we calculate precision as the ratio of the number of matches and the total number of long-range contacts in the true contact matrix.  
+2. Precision & Recall of all long-range contacts: From the true distance matrix and the predicted distance matrix, all long-range distances less than 8 Angstroms are set to 1 and all others to zero, i.e. we convert the distance matrix to long-range contact matrix. Then, we calculate precision as the ratio of the number of matches and the total number of long-range contacts in the true contact matrix.  
 
 <img src="what-is-long-range.png" align="middle" height="250"/>
 Figure2. Long-range distances and non-long-range distances in a distance matrix.
