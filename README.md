@@ -1,4 +1,6 @@
-# IEEE ICMLA 2019 Challenge - Protein Inter-Residue Distance Prediction
+# IEEE ICMLA 2019 Challenge
+## Protein Inter-Residue Distance Prediction
+https://www.icmla-conference.org/icmla19/challenges.html
 
 ## Organizers  
 [Badri Adhikari](https://badriadhikari.github.io/) and [Sharlee Climer](http://www.cs.umsl.edu/~climer/)  
