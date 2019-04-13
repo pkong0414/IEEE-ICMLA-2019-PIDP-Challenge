@@ -39,7 +39,7 @@ The goal of our evaluation is to assess the usefulness of predicted distances to
 
 2. Precision & Recall of all long-range contacts: From the true distance matrix and the predicted distance matrix, all long-range distances less than 8 Angstroms are set to 1 and all others to zero, i.e. we convert the distance matrix to long-range contact matrix. Then, we calculate precision as the ratio of the number of matches and the total number of long-range contacts in the true contact matrix.  
 <p align="center">
-<img src="what-is-long-range.png" align="middle" height="250"/>  
+<img src="what-is-long-range.png" align="middle" height="250"/>    
 Figure2. Long-range distances and non-long-range distances in a distance matrix.      
 </p>
 3. TMscore and RMSD of the top one model. The distance maps predicted can be used to build full three-dimensional models (see the folder “how_to_build_models” in the GitHub repository). The quality of the three-dimensional models will be evaluated using template-modeling score (TMscore) and root mean square deviation (RMSD) calculated using the [TMscore tool](https://zhanglab.ccmb.med.umich.edu/TM-score/).
