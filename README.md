@@ -42,7 +42,7 @@ The goal of our evaluation is to assess the usefulness of predicted distances to
 <img src="what-is-long-range.png" align="middle" height="250"/></br>
 Figure2. Long-range distances and non-long-range distances in a distance matrix.      
 </p>
-3. TMscore and RMSD of the top one model. The distance maps predicted can be used to build full three-dimensional models (see the folder “how_to_build_models” in the GitHub repository). The quality of the three-dimensional models will be evaluated using template-modeling score (TMscore) and root mean square deviation (RMSD) calculated using the [TMscore tool](https://zhanglab.ccmb.med.umich.edu/TM-score/).
+<b>3. TMscore and RMSD of the top one model.</b> The distance maps predicted can be used to build full three-dimensional models (see the folder “how_to_build_models” in the GitHub repository). The quality of the three-dimensional models will be evaluated using template-modeling score (TMscore) and root mean square deviation (RMSD) calculated using the [TMscore tool](https://zhanglab.ccmb.med.umich.edu/TM-score/).
 
 ## Datasets and Codes  
 
