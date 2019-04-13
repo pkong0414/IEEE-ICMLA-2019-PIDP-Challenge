@@ -32,18 +32,6 @@ From the perspective of input and output data format, the protein distance predi
 ## Challenge  
 Each protein input features are an input volume of size 256 x 256 x 13 and the output labels are a 256 x 256 matrix of real numbers that represent the physical distances (from 3 Angstroms to 100+ Angstroms). The challenge here is to learn from the 13 input channels to accurately predict the output labels. It is a regression problem where we predict real values. However, it can be transformed into a multi-class classification problem by creating bins of distance ranges, i.e. predict whether each distance maps to a range of 0 to 3, or 3 to 6, or 6+, etc. It is expected that you train and validate your method on the Training Dataset and finally test it on the Test Dataset.
 
-## Performance Evaluation  
-The goal of our evaluation is to assess the usefulness of predicted distances towards using them to build full three-dimensional models. Long-range distances are the most difficult to accurately determine and our evaluations focus on ‘long-range’ distances, as shown in Figure 2. Long-range distances in a distance matrix are the distances between pairs of amino acids that are more than 23 residues apart in the corresponding protein sequence. Towards that goal, we will evaluate distance map predictions in two ways: 
-
-1. MAE of the top L long-range smallest predicted distances: Of all the predicted long-range distances, distances are sorted in ascending order and only the top L distances are considered for evaluation. L stands for the length of the protein being evaluated. Then the mean absolute error (MAE) between these predicted distances and true distances is calculated.  
-
-2. Precision & Recall of all long-range contacts: From the true distance matrix and the predicted distance matrix, all long-range distances less than 8 Angstroms are set to 1 and all others to zero, i.e. we convert the distance matrix to long-range contact matrix. Then, we calculate precision as the ratio of the number of matches and the total number of long-range contacts in the true contact matrix.  
-<p align="center">
-<img src="what-is-long-range.png" align="middle" height="250"/></br>
-Figure2. Long-range distances and non-long-range distances in a distance matrix.      
-</p>
-<b>3. TMscore and RMSD of the top one model.</b> The distance maps predicted can be used to build full three-dimensional models (see the folder “how_to_build_models” in the GitHub repository). The quality of the three-dimensional models will be evaluated using template-modeling score (TMscore) and root mean square deviation (RMSD) calculated using the [TMscore tool](https://zhanglab.ccmb.med.umich.edu/TM-score/).
-
 ## Datasets and Codes  
 
 The dataset for training, validation, and testing are available at the Google Storage location. 
@@ -69,10 +57,21 @@ The folder “how_to_build_models” in the this GitHub repository contains the 
 ## How Did We Prepare the Dataset?
 
 Please refer to the GitHub repository for the details about dataset preparation.
+## Performance Evaluation  
+The goal of our evaluation is to assess the usefulness of predicted distances towards using them to build full three-dimensional models. Long-range distances are the most difficult to accurately determine and our evaluations focus on ‘long-range’ distances, as shown in Figure 2. Long-range distances in a distance matrix are the distances between pairs of amino acids that are more than 23 residues apart in the corresponding protein sequence. Towards that goal, we will evaluate distance map predictions in two ways: 
+
+<b>1. MAE of the top L long-range smallest predicted distances:</b> Of all the predicted long-range distances, distances are sorted in ascending order and only the top L distances are considered for evaluation. L stands for the length of the protein being evaluated. Then the mean absolute error (MAE) between these predicted distances and true distances is calculated.  
+
+<b>2. Precision & Recall of all long-range contacts:</b> From the true distance matrix and the predicted distance matrix, all long-range distances less than 8 Angstroms are set to 1 and all others to zero, i.e. we convert the distance matrix to long-range contact matrix. Then, we calculate precision as the ratio of the number of matches and the total number of long-range contacts in the true contact matrix.  
+<p align="center">
+<img src="what-is-long-range.png" align="middle" height="250"/></br>
+Figure2. Long-range distances and non-long-range distances in a distance matrix.      
+</p>
+<b>3. TMscore and RMSD of the top one model:</b> The distance maps predicted can be used to build full three-dimensional models (see the folder “how_to_build_models” in the GitHub repository). The quality of the three-dimensional models will be evaluated using template-modeling score (TMscore) and root mean square deviation (RMSD) calculated using the TMscore tool at https://zhanglab.ccmb.med.umich.edu/TM-score/.
 
 ## Submission
 
-A short paper (4 pages) describing the proposed algorithms and results on the provided datasets should be submitted through the main conference submission website. We also require you to submit your code along with your paper, although you may choose to not to release your code publicly. Submitted papers will be reviewed mainly based on: 1) originality and technical soundness of the employed algorithm, and 2) performance of the algorithm with respect to the evaluation criterion above.
+A short paper (4 pages) describing the proposed algorithms and results on the provided datasets should be submitted through the main conference submission website. We also require you to submit your code along with your paper, although you may choose to not to release your code publicly. Submitted papers will be reviewed mainly based on: 1) originality and technical soundness of the employed algorithm, and 2) performance of the algorithm with respect to the evaluation criterion above. Submit your paper at https://www.icmla-conference.org/icmla19/howtosubmit.html.
 
 ## Publication
 
