@@ -17,5 +17,6 @@ gcloud init
 ./submit-gcloud-job.sh
 ```
 ----------
-### Reference  
-https://medium.com/@natu.neeraj/training-a-keras-model-on-google-cloud-ml-cb831341c196
+### References  
+* https://medium.com/@natu.neeraj/training-a-keras-model-on-google-cloud-ml-cb831341c196
+* https://github.com/Neeraj-Natu/keras-cloud-test
