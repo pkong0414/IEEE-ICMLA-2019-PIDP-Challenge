@@ -104,7 +104,7 @@ for pdb in sorted(pdb_list):
     for pair in sorted(p_dict.items(), key=lambda x: x[1]):
         (k, v) = pair
         (i, j) = k
-        f.write("%d %d %.2f %.2f %.5f\n" % (i, j, p_dict[k] - DEVIATIONPOSNEG , p_dict[k] + DEVIATIONPOSNEG, 1 / p_dict[k]))
+        f.write("%d %d %.2f %.2f %.5f\n" % (i+1, j+1, p_dict[k] - DEVIATIONPOSNEG , p_dict[k] + DEVIATIONPOSNEG, 1 / p_dict[k]))
         x -= 1
         if x == 0:
             break
