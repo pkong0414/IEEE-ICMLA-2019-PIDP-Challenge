@@ -17,7 +17,7 @@ The IEEE ICMLA Conference: December 16-19, 2019
 
 ##  Datasets & Code
 * The dataset for training, validation, and testing are available [here](http://deep.cs.umsl.edu/pidp-dataset/) 
-* A Python Notebook containing code to train, validate, and test is available at this repository (see 'PIDP_v1_0.ipynb'). If GitHub fails to load the file please use [this link](https://nbviewer.jupyter.org/github/badriadhikari/IEEE-ICMLA-2019-PIDP-Challenge/blob/master/PIDP_v1_1.ipynb).
+* A Python Notebook containing code to train, validate, and test is available at this repository (see 'PIDP_v1.2.ipynb'). If GitHub fails to load the file please use [this link](https://nbviewer.jupyter.org/github/badriadhikari/IEEE-ICMLA-2019-PIDP-Challenge/blob/master/PIDP_v1.2.ipynb).
 
 ##  Overview  
 Predicting three-dimensional structures of proteins is a notoriously challenging interdisciplinary problem [1,2]. Many biologists, biochemists, bioinformaticians, biomedical researchers, and computer scientists have been attacking the problem for 50+ years . Now, with the help of deep learning methods and high throughput protein sequencing technologies, it appears that we are close to cracking it. The overall goal in the field of protein structure prediction is to predict full three-dimensional structure given an amino acid sequence. Google DeepMind recently participated in the CASP13 protein structure prediction challenge as the AlphaFold group  and contributed some novel ideas to the field ([read more](https://moalquraishi.wordpress.com/2018/12/09/alphafold-casp13-what-just-happened/)). It is clear that there are many unexplored opportunities in the field using the data that is currently available.  
